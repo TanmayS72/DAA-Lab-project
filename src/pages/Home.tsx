@@ -1,24 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import santaSleigh from "@/assets/santa-sleigh.png";
+import backgroundImage from "@/assets/todd-diemer-67t2GJcD5PI-unsplash.jpg";
 import { MapPin, Zap, BarChart3 } from "lucide-react";
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-winter relative overflow-hidden">
+    <div
+      style={{
+        minHeight: '100vh',
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+      className="relative overflow-hidden"
+    >
       {/* Animated snowflakes */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(40)].map((_, i) => (
           <div
             key={i}
-            className="absolute text-white/30 animate-snowfall"
+            className="absolute text-white/40 animate-snowfall"
             style={{
               left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 10}s`,
-              animationDuration: `${10 + Math.random() * 10}s`,
-              fontSize: `${10 + Math.random() * 20}px`,
+              animationDelay: `${Math.random() * 15}s`,
+              animationDuration: `${8 + Math.random() * 12}s`,
+              fontSize: `${8 + Math.random() * 24}px`,
             }}
           >
             ❄
