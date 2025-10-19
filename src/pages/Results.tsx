@@ -66,7 +66,7 @@ const Results = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-winter py-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-200 to-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between mb-8">
           <Button
