@@ -66,8 +66,8 @@ const RouteMap = ({ houses }: RouteMapProps) => {
   const northPoleY = 50;
 
   return (
-    <Card className="bg-winter-teal/30 backdrop-blur-sm shadow-frost overflow-hidden">
-      <div className="relative h-[600px] bg-gradient-to-br from-frosty-blue/20 to-winter-teal/20">
+    <Card className="h-full bg-winter-teal/30 backdrop-blur-sm shadow-frost overflow-hidden">
+      <div className="relative h-full min-h-[600px] bg-gradient-to-br from-frosty-blue/20 to-winter-teal/20">
         {/* Grid pattern */}
         <svg className="absolute inset-0 w-full h-full opacity-10 pointer-events-none">
           <defs>
