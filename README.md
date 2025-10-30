@@ -14,10 +14,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone <https://github.com/TanmayS72/DAA-Lab-project.git>
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd <Santas Route Optimiser>
 
 # Step 3: Install the necessary dependencies.
 npm i
